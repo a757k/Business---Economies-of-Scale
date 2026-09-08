@@ -4,7 +4,7 @@ import { economies, quizQuestions } from "./data";
 const tabs = [
   { id: "home", label: "Home", icon: "⌂" },
   { id: "learn", label: "Learn", icon: "📚" },
-  { id: "ai", label: "AI Tutor", icon: "✦" },
+  { id: "ai", label: "McManus AI", icon: "✦" },
   { id: "test", label: "Test Me", icon: "✓" }
 ];
 
@@ -130,7 +130,7 @@ function Home({ goTo }) {
           <p>
             Understand the six types of economies of scale,
             practise exam questions and get personalised help
-            from an AI Business Studies tutor.
+            from McManus AI, your Business Studies tutor.
           </p>
 
           <div className="hero-buttons">
@@ -162,7 +162,7 @@ function Home({ goTo }) {
 
             <div>
               <strong>AI</strong>
-              <span>Tutor</span>
+              <span>McManus AI</span>
             </div>
           </div>
         </div>
@@ -289,7 +289,7 @@ function Home({ goTo }) {
 
           <Feature
             icon="✦"
-            title="AI Tutor"
+            title="McManus AI"
             text="Ask questions and receive explanations tailored to what you actually want to understand."
           />
 
@@ -557,7 +557,7 @@ function AITutor() {
     } catch (err) {
       setError(
         err.message ||
-          "The AI Tutor could not answer right now."
+          "McManus AI could not answer right now."
       );
     } finally {
       setLoading(false);
@@ -576,14 +576,15 @@ function AITutor() {
 
         <div>
           <span className="section-label">
-            PERSONAL AI TUTOR
+            MCMANUS AI • PERSONAL BUSINESS STUDIES TUTOR
           </span>
 
           <h1>Ask. Understand. Improve.</h1>
 
           <p>
             Ask anything about economies of scale and get an
-            explanation designed around your question.
+            explanation designed around your question from
+            McManus AI.
           </p>
         </div>
       </section>
@@ -594,7 +595,7 @@ function AITutor() {
             <div className="ai-panel-header">
               <div>
                 <span className="section-label">
-                  ASK YOUR QUESTION
+                  ASK MCMANUS AI
                 </span>
 
                 <h2>What are you stuck on?</h2>
@@ -602,7 +603,7 @@ function AITutor() {
 
               <div className="ai-status">
                 <span></span>
-                AI Tutor
+                McManus AI
               </div>
             </div>
 
@@ -673,11 +674,11 @@ function AITutor() {
               {loading ? (
                 <>
                   <span className="spinner"></span>
-                  Thinking...
+                  McManus AI is thinking...
                 </>
               ) : (
                 <>
-                  Ask AI Tutor
+                  Ask McManus AI
                   <span>→</span>
                 </>
               )}
@@ -690,7 +691,7 @@ function AITutor() {
                 <div className="answer-avatar">✦</div>
 
                 <div>
-                  <strong>AI Tutor</strong>
+                  <strong>McManus AI</strong>
                   <span>
                     Personalised explanation
                   </span>
